@@ -5,16 +5,18 @@ export class UserInput extends Component {
   render() {
     return (
       <Fragment>
-        <h2 className='text-secondary'>Enter the email of the company you want to search</h2>
+        <h2 className='text-secondary'>Enter the Domain you want to search</h2>
+        <hr />
+        <h4 className='text-secondary'>ie "example.com"</h4>
         <hr />
         <form>
           <div className='form-group' style={{ width: '50%', margin: 'auto'}}>
-            <label for='email-input' >Email</label>
+            <label for='email-input' >Domain</label>
             <input 
               type='text' 
               className='form-control' 
               id='email-input' 
-              placeholder='Enter Email...'
+              placeholder='Enter Domain...'
       
               />
           </div>
