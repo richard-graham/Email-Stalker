@@ -22,8 +22,8 @@ export class UserInput extends Component {
   render() {
     return (
       <Fragment>
-        <h2 className='text-secondary'>Enter the business domain you want to hack</h2>
-        <h5 className='text-secondary'>i.e "example.com"</h5>
+        <h2 className='text-secondary text-center'>Enter the business domain you want to hack</h2>
+        <h5 className='text-secondary text-center'>i.e "example.com"</h5>
         <hr />
         <hr />
         <form>
