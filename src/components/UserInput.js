@@ -1,43 +1,22 @@
 import React, { Component, Fragment } from 'react'
 import { connect } from 'react-redux'
-import { getEmails } from '../redux/actions/dataActions'
 
 export class UserInput extends Component {
-
-  state = {
-    input: ''
-  }
-
-  handleChange = (e) => {
-    this.setState({
-      input: e.target.value
-    })
-  } 
-
-  handleSubmit = (e) => {
-    e.preventDefault()
-    this.props.getEmails(this.state.input)
-  }
-
   render() {
     return (
       <Fragment>
-        <h2 className='text-secondary'>Enter the business domain you want to hack</h2>
-        <h5 className='text-secondary'>i.e "example.com"</h5>
-        <hr />
+        <h2 className='text-secondary'>Enter the email of the company you want to search</h2>
         <hr />
         <form>
           <div className='form-group' style={{ width: '50%', margin: 'auto'}}>
-            <label htmlFor='email-input' >Domain</label>
+            <label for='email-input' >Email</label>
             <input 
               type='text' 
               className='form-control' 
               id='email-input' 
-              placeholder='Enter Domain...'
-              onChange={this.handleChange}
+              placeholder='Enter Email...'
+      
               />
-              <hr />
-              <button className='btn btn-primary' onClick={this.handleSubmit}>Submit</button>
           </div>
         </form>
       </Fragment>
@@ -46,7 +25,7 @@ export class UserInput extends Component {
 }
 
 const mapDispatchToProps = {
-  getEmails
+  // getEmail
 }
 
 const mapStateToProps = state => ({

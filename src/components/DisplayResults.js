@@ -42,6 +42,8 @@ export class DisplayResults extends Component {
             </tbody>
           </table>
         </Fragment>
+      ) : domain && organization === null ? (
+        <h5 className='text-secondary'>Domain not found!</h5>
       ) : ''
     )
   }
