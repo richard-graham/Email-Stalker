@@ -42,6 +42,8 @@ export class DisplayResults extends Component {
             </tbody>
           </table>
         </Fragment>
+      ) : emails && emails.length < 1 ? (
+        <h5 className='display-4 text-center'>Nothing found for this email</h5>
       ) : ''
     )
   }
